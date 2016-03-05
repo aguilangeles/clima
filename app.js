@@ -17,7 +17,7 @@
                         url: "http://api.openweathermap.org/data/2.5/weather?q=" + ciudad + "&appid=2402109a2590eed99da9333342e1c8a1&units=metric",
                     })
                     .done(function (msg) {
-                        loadData(msg)
+                        loadData(msg);
                     });
 
             } else {
@@ -30,9 +30,10 @@
             var pais = $('<p class="pais">' + data.name + '</p>');
             var main = data.main;
             var temp = $('<p class="temp">' + main.temp + '</p>');
-            $(".resultado").append(pais);
-            $(".resultado").append(temp);
+            $(".resultado").append(pais).append(temp);
+
         }
+
         $('#load').on('click', getciudad);
     }()
 );

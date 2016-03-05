@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <!--Consumimos la api de wheather, aprendiendo ajax -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
           integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -19,23 +20,21 @@
     <div class="row">
         <div class="col-md-8">
             <div class="jumbotron">
-                <h2>Conocé la temperatura en... <span class="glyphicon glyphicon-cloud"></span></h2>
+                <h2><span class="glyphicon glyphicon-cloud"></span> Conocé la temperatura en... </h2>
                 <div class="input-group">
                     <input type="text" id="ciudad" class="form-control" placeholder="Ingresa la cuidad">
                       <span class="input-group-btn">
-                        <button id="load" class="btn btn-default" type="button">Buscar</button>
+                        <button id="load" class="btn btn-warning" type="button">Buscar</button>
                       </span>
                 </div>
 
             </div>
         </div>
         <div class="col-md-4">
-            <div class="jumbotron resultado">
-                <h1>
+            <div class="jumbotron segundo">
                     <div class="resultado">
                     </div>
                     <p class="pais"></p>
-                </h1>
             </div>
             </div>
         </div>

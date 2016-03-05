@@ -2,6 +2,11 @@
     margin-top:20px;
 }
 
-.jumbotron .resultado{
-    min-height: 65px;
+.jumbotron{
+    background-color: #fcf8e3;
 }
+.resultado{
+    min-height: 83px;
+
+}
+
